@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vue Js</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Vue Js v-2 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script defer src="/assets/js/app.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <app-header :mobile="mobileMenu" @toggler="toggleMenu"></app-header>
+
+    <app-view>
+
+      <app-intro></app-intro>
+      <app-about></app-about>
+      <app-experience :experiences="experiences"></app-experience>
+      <app-projects></app-projects>
+      <app-other-projects></app-other-projects>
+      <app-contact></app-contact>
+
+    </app-view>
+
+    <app-footer></app-footer>
+
+  </div>
+</body>
+
+</html>

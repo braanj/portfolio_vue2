@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import './parts/root',
+'./parts/reset',
+'./parts/header',
+'./parts/about',
+'./parts/tabs',
+'./parts/projects',
+'./parts/contact',
+'./parts/footer',
+'./parts/other-poroducts';
+
+// globals
+.section__number {
+  padding-right: .5rem;
+  color: var(--number-color);
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.button {
+  color: var(--number-color) !important;
+  border: 1px solid var(--number-color);
+  border-radius: 3px;
+  padding: .75rem 1.5rem;
+  transition: all 225ms ease-in-out;
+
+  &:active {
+    opacity: .8;
+  }
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+.main__menu,
+.container {
+  counter-reset: section 0;
+}
+.container {
+  margin: 1rem 20%;
+}
+
+.section {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: start;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: .5rem 5%;
+  }
+
+  .section {
+    padding: .5rem;
+  }
+}
+
+.small__text {
+  display: block;
+  font-size: var(--smaller-font-size);
+}
+
+.main__title {
+  font-size: var(--big-font-size);
+  line-height: 1.2;
+
+  &.subtitle {
+    opacity: .6;
+  }
+}
+
+.description__text {
+  font-size: var(--normal-font-size);
+  line-height: 1.4;
+  margin: 1.5rem 0;
+  max-width: 70%;
+}
+
+.important__text {
+  color: var(--number-color);
+}
+
+.secondary__title {
+  display: flex;
+  align-items: center;
+  -moz-box-align: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #CCD6F669;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .secondary__title {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.third__title {
+  margin-bottom: 1rem;
+}
+
+.sub__title {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-style: italic;
+  margin-top: -.5rem;
+}
+
+.section__counter {
+  &::before {
+    counter-increment: section;
+    margin-right: 10px;
+    color: var(--number-color);
+    content: '0' counter(section) '.';
+  }
+}
+
+.list__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: square;
+  list-style-position: inside;
+
+  li::marker {
+    color: var(--number-color);
+  }
+}

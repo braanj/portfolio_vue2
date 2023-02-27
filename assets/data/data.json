@@ -1,0 +1,44 @@
+{
+  "title": "Where I've Worked",
+  "tabs": [
+    "Novazeo",
+    "Games",
+    "Devforyou"
+  ],
+  
+  "selectedTab": "Novazeo",
+  "experiences": [
+    {
+      "tab": "Novazeo",
+      "title": "Creative Technologist Co-op <span class=\"important__text\">@ MullenLowe</span>",
+      "subtitle": "July - December 2019",
+      "tasks": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, Javascript, and Jquery.",
+        "Manully tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.",
+        "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of defense, and more."
+      ]
+    },
+
+    {
+      "tab": "Games",
+      "title": "Creative Technologist Co-op <span class=\"important__text\">@ Yan Games Studio</span>",
+      "subtitle": "July - December 2019",
+      "tasks": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, Javascript, and Jquery.",
+        "Manully tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.",
+        "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of defense, and more."
+      ]
+    },
+
+    {
+      "tab": "Devforyou",
+      "title": "Creative Technologist Co-op <span class=\"important__text\">@ Devforyou</span>",
+      "subtitle": "July - December 2019",
+      "tasks": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, Javascript, and Jquery.",
+        "Manully tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.",
+        "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of defense, and more."
+      ]
+    }
+  ]
+}
